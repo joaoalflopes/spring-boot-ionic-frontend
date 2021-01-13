@@ -1,3 +1,24 @@
 page-home {
 
+    h3{
+        text-align: center;
+        text-decoration:inherit;
+    }
+
+    h5{
+        text-align: center;
+        text-decoration-line:underline;
+    }
+
+    h6{
+        text-align: center;
+    }
+
+    img{
+        width: 200px;
+        align-self: center;
+        margin: auto;
+        display: block;
+        padding: 10px;
+    }
 }
