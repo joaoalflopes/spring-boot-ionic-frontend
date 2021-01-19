@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\assets",
-    "\\src\\assets\\imgs",
+    "\\src\\app",
+    "\\src\\models",
     "\\src\\pages",
-    "\\src\\pages\\home"
+    "\\src\\pages\\categories",
+    "\\src\\pages\\home",
+    "\\src\\services",
+    "\\src\\services\\domain"
   ],
-  "SelectedNode": "\\src\\pages\\home\\home.scss",
+  "SelectedNode": "\\src\\pages\\categories\\categories.ts",
   "PreviewInSolutionExplorer": false
 }
