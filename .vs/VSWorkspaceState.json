@@ -3,6 +3,7 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\config",
     "\\src\\models",
     "\\src\\pages",
     "\\src\\pages\\categories",
@@ -10,6 +11,6 @@
     "\\src\\services",
     "\\src\\services\\domain"
   ],
-  "SelectedNode": "\\src\\pages\\categories\\categories.ts",
+  "SelectedNode": "\\src\\services\\domain\\category.service.ts",
   "PreviewInSolutionExplorer": false
 }
