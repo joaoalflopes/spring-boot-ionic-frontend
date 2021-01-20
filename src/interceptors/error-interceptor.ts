@@ -3,18 +3,18 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Rx";
 
 @Injectable()
-export class ErrorInterceptor implements HttpInterceptor{
+export class ErrorInterceptor implements HttpInterceptor {
 
         intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-                console.log("passou por aqui");
+                console.log("passou pelo interceptor");
                 return next.handle(req)
                 .catch((error, caught) => {
 
                         let errorObj = error;
-                        if(errorObj.error){
+                        if(errorObj.error) {
                                 errorObj = errorObj.error;
                         }
-                        if(!errorObj.status){
+                        if(!errorObj.status) {
                                 errorObj = JSON.parse(errorObj);
                         }
 
