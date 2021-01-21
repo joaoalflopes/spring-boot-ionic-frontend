@@ -28,7 +28,14 @@ export class ProfilePage {
           this.user = Response;
           this.getImageIfExists();
         },
-        _error => {});
+        _error => {
+          if(_error.status == 403) {
+            this.navCtrl.setRoot('HomePage');
+          }
+        });
+    }
+    else {
+      this.navCtrl.setRoot('HomePage');
     }
   }
 
@@ -37,6 +44,6 @@ export class ProfilePage {
       .subscribe(Response => {
         this.user.imageUrl = `${API_CONFIG.bucketBaseUrl}/Cp${this.user.id}.jpg`;
       },
-      error => {});
+      _error => {});
   }
 }
